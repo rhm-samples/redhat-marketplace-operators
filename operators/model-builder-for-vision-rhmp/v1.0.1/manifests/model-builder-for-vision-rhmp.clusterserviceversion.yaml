@@ -49,7 +49,7 @@ metadata:
     operators.operatorframework.io/project_layout: ansible.sdk.operatorframework.io/v1
     support: Refer Readme - https://github.com/rhm-samples/ibm-modelbuilder-for-vision/issues
     olm.skipRange: "<1.0.1"
-        marketplace.openshift.io/remote-workflow: https://marketplace.redhat.com/en-us/operators/model-builder-for-vision-rhmp/pricing?utm_source=openshift_console
+    marketplace.openshift.io/remote-workflow: https://marketplace.redhat.com/en-us/operators/model-builder-for-vision-rhmp/pricing?utm_source=openshift_console
     marketplace.openshift.io/support-workflow: https://marketplace.redhat.com/en-us/operators/model-builder-for-vision-rhmp/support?utm_source=openshift_console
   name: ibm-modelbuilder-for-vision-rhmp.v1.0.1
   namespace: placeholder
@@ -571,7 +571,7 @@ spec:
                     fieldRef:
                       fieldPath: metadata.annotations['olm.targetNamespaces']
                 - name: RELATED_IMAGE_POSTGRES_CLI
-                  value: registry.access.redhat.com/rhel8/postgresql-12@sha256:1de895df0c9bce080e0a45efce78e70c99de43484de0fb6e4e5ba824d9566434
+                  value: registry.redhat.io/rhel8/postgresql-12@sha256:1de895df0c9bce080e0a45efce78e70c99de43484de0fb6e4e5ba824d9566434
                 - name: RELATED_IMAGE_PGO_DEPLOY
                   value: registry.connect.redhat.com/crunchydata/pgo-deployer@sha256:4c5f605669edc2125a6aea31c66c89cef524b57284eac302f35bbfa4680d1467
                 - name: RELATED_IMAGE_PGO_CLIENT
